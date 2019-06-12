@@ -7,9 +7,11 @@
         <groupId>com.jsystem</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>frontend</artifactId>
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.google.truth/truth -->
         <dependency>
@@ -43,11 +45,12 @@
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <!-- https://mvnrepository.com/artifact/com.typesafe/config -->
         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
+            <groupId>com.typesafe</groupId>
+            <artifactId>config</artifactId>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>

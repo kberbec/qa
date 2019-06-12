@@ -8,6 +8,7 @@
     <artifactId>qa</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>qajunit</module>
         <module>frontend</module>
@@ -51,6 +52,13 @@
 
 
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.typesafe/config -->
+        <dependency>
+            <groupId>com.typesafe</groupId>
+            <artifactId>config</artifactId>
+            <version>1.3.4</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -104,14 +112,14 @@
                         <version>5.0.1</version>
                     </dependency>
                 </dependencies>
-<!--                <configuration>-->
+<!--                <com.jsystems.frontend.configuration>-->
 <!--                    <includes>-->
 <!--                        <include>**/*Test.java</include>-->
 <!--                    </includes>-->
 <!--                    <properties>-->
 <!--                        &lt;!&ndash;<includeTags>${tests}</includeTags>&ndash;&gt;-->
 <!--                    </properties>-->
-<!--                </configuration>-->
+<!--                </com.jsystems.frontend.configuration>-->
             </plugin>
         </plugins>
     </build>

@@ -10,10 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>qajunit</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>frontend</module>
-    </modules>
+
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.google.truth/truth -->
