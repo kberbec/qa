@@ -4,17 +4,25 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage extends BasePage{
-        public LoginPage(WebDriver driver) {
-            super(driver);
+public class LoginPage extends BasePage {
 
-        }
-
-        public WebElement emailInput = driver.findElement(By.id("usernameOrEmail"));
-        public WebElement buttonContine = driver.findElement(By.className("button form-button is-primacy:"));
+    public LoginPage(WebDriver driver) {
+        super(driver);
+        PageFactory.initElements(driver, this);
     }
-@FindBy (id ="password");
-public WebElement
+
+    @FindBy(id = "usernameOrEmail")
+    public WebElement emailInput;
+    //    public WebElement emailInput = driver.findElement(By.id("usernameOrEmail"));
+    @FindBy(css = ".button.form-button")
+    public WebElement buttonContinue;
+//    public WebElement buttonContinue = driver.findElement(By.cssSelector(".button.form-button"));
+
+    @FindBy(id = "password")
+    public WebElement passwordInput;
 
 
+
+}

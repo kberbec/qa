@@ -10,9 +10,9 @@ public class Configuration {
     private static final String BROWSER = CONFIG.getString("browser");
     private static final String MACHINE = CONFIG.getString("machine");
 
-    private static final String BASEURL = ENV.getString("baseUrl");
-    private static final String LOGIN = ENV.getString("login");
-    private static final String PASSWORD = ENV.getString("password");
+    public static final String BASE_URL = ENV.getString("baseUrl");
+    public static final String LOGIN = ENV.getString("login");
+    public static final String PASSWORD = ENV.getString("password");
 
     public static String getBrowser () {
         return BROWSER;

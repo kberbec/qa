@@ -15,33 +15,34 @@ public class ConfigFrontend {
     WebDriver driver;
 
     @BeforeAll
-    public static void setUpAll(){
-
+    public static void setUpAll() {
+//        WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.gecko.driver", ClassLoader.getSystemClassLoader().getResource("driver/geckodriver.exe").getFile());
         System.setProperty("webdriver.chrome.driver", ClassLoader.getSystemClassLoader().getResource("driver/chromedriver.exe").getFile());
     }
+
     @BeforeEach
-    public void setUpEach(){
+    public void setUpEach() {
+
         String browser = Configuration.getBrowser();
 
-        if(browser.equals("chrome")) {
+        if(browser.equals("chrome")){
             driver = new ChromeDriver();
-        }
-        else if(browser.equals("firefox")) {
+        } else if(browser.equals("firefox")){
             driver = new FirefoxDriver();
         }
 
-        WebDriver driver = new ChromeDriver();
         setDriver();
+
+        driver.get(Configuration.BASE_URL);
     }
 
     @AfterEach
-    public void tearDown(){
+    public void tearDown() {
         driver.quit();
-
     }
 
     private void setDriver() {
-
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
