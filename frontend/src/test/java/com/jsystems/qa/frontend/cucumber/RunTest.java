@@ -12,9 +12,9 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumber-html-report", "rerun:target/rerun.txt"},
         tags ={
                 "@wordpress",
-                "@login",
-                "@userProfile",
-                "@notification"
+                //"@login",
+                //"@userProfile",
+                //"@notification"
 
         }
 )

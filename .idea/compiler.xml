@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="frontend" />
         <module name="qajunit" />
+        <module name="qaapi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="frontend" target="1.8" />
       <module name="qa" target="1.8" />
+      <module name="qaapi" target="1.8" />
       <module name="qajunit" target="1.8" />
     </bytecodeTargetLevel>
   </component>

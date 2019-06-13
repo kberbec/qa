@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/frontend/frontend.iml" filepath="$PROJECT_DIR$/frontend/frontend.iml" />
       <module fileurl="file://$PROJECT_DIR$/qa.iml" filepath="$PROJECT_DIR$/qa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qaapi/qaapi.iml" filepath="$PROJECT_DIR$/qaapi/qaapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/qajunit/qajunit.iml" filepath="$PROJECT_DIR$/qajunit/qajunit.iml" />
     </modules>
   </component>
