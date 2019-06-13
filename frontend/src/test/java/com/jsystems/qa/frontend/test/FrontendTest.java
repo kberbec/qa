@@ -4,6 +4,7 @@ import com.jsystems.frontend.Configuration;
 import com.jsystems.qa.frontend.page.LoginPage;
 import com.jsystems.qa.frontend.page.MainWordpressPage;
 import com.jsystems.qa.frontend.page.UserPage;
+import com.jsystems.qa.frontend.test.ConfigFrontend;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -11,9 +12,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import javax.swing.*;
-
-import static java.lang.Thread.sleep;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -37,7 +35,7 @@ public class FrontendTest extends ConfigFrontend {
         login();
 
         userPage = new UserPage(driver);
-        userPage.waitForVisibilityOfElement(userPage.userAvatar, 30);
+        userPage.waitForVisibilityOfElement(userPage.userAvatar, 120);
         assertTrue(userPage.userAvatar.isDisplayed());
 
 //        Alert alert = driver.switchTo().alert();
