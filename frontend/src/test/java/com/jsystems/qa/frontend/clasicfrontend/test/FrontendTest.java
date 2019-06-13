@@ -1,15 +1,11 @@
-package com.jsystems.qa.frontend.test;
+package com.jsystems.qa.frontend.clasicfrontend.test;
 
 import com.jsystems.frontend.Configuration;
-import com.jsystems.qa.frontend.page.LoginPage;
-import com.jsystems.qa.frontend.page.MainWordpressPage;
-import com.jsystems.qa.frontend.page.UserPage;
-import com.jsystems.qa.frontend.test.ConfigFrontend;
+import com.jsystems.qa.frontend.clasicfrontend.page.LoginPage;
+import com.jsystems.qa.frontend.clasicfrontend.page.MainWordpressPage;
+import com.jsystems.qa.frontend.clasicfrontend.page.UserPage;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
