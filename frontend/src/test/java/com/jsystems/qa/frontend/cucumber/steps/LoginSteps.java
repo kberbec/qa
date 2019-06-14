@@ -32,7 +32,7 @@ public class LoginSteps {
         driver.get(Configuration.BASE_URL);
     }
 
-    @When("^User log In to the user page$")
+    @When("^User log in to the user page$")
     public void userLogInToTheUserPage() {
         login();
 
@@ -60,7 +60,7 @@ public class LoginSteps {
         driver.get(arg0);
     }
 
-    @Then("^User can modified notifications$")
+    @Then("^User can modified user notifications$")
     public void userCanModifiedNotifications() {
         userPage.userAvatar.click();
         userProfilePage = new UserProfilePage(driver);
